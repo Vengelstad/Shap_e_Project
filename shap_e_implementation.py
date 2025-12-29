@@ -11,6 +11,7 @@ Based on: OpenAI Shap-E (https://github.com/openai/shap-e)
 """
 
 import torch
+from PIL import Image
 from shap_e.diffusion.sample import sample_latents
 from shap_e.diffusion.gaussian_diffusion import diffusion_from_config
 from shap_e.models.download import load_model, load_config
@@ -199,16 +200,13 @@ class ShapEGenerator:
     
     def save_as_gif(self, images, output_path):
         """
-        Save rendered images as an animated GIF.
+        Save rendered images as an animated GIF using PIL.
         
         Args:
-            images: List of rendered images.
+            images: List of rendered images (numpy arrays).
             output_path (str): Path where the GIF will be saved.
         """
         print(f"Saving animation to: {output_path}")
-        # Note: This uses the gif_widget function which is designed for notebooks
-        # For script usage, you might want to use PIL or imageio instead
-        from PIL import Image
         
         pil_images = [Image.fromarray(img) for img in images]
         pil_images[0].save(

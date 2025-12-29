@@ -2,7 +2,7 @@
 
 **Author:** Vengelstad  
 **Repository:** https://github.com/Vengelstad/Shap_e_Project  
-**Date:** December 2025  
+**Date:** December 2024  
 **Based on:** OpenAI Shap-E (https://github.com/openai/shap-e)
 
 ---
@@ -473,4 +473,4 @@ For questions, suggestions, or contributions, please open an issue or pull reque
 
 ---
 
-*This documentation was created as part of a self-learning project to understand and implement 3D generative AI models. Last updated: December 2025*
+*This documentation was created as part of a self-learning project to understand and implement 3D generative AI models. Last updated: December 2024*
